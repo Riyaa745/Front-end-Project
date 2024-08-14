@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card2(Best seller)</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* css of best seller card  */
+        .container {
+            margin: 0rem 10rem;
+        }
+
+        .top1 {
+            display: flex;
+            align-items: center;
+            gap: 42rem;
+            margin-left: 1rem;
+            /* line-height: 11rem; */
+            margin-top: 10rem;
+            margin-bottom: 4rem;
+            font-size: 28px;
+        }
+
+        .image {
+            width: 21rem;
+            border-radius: 10px;
+        }
+
+        .card1 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        .para {
+            margin-top: 2rem;
+            text-align: center;
+            padding-left: 2rem;
+        }
+
+        .row {
+            box-shadow: 0px 0px 0px;
+            width: 18rem;
+            height: 20rem;
+        }
+
+        #btn {
+            background-color: rgb(205, 27, 27);
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px 27px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Best seller starting -->
+    <div class="container">
+        <div class="top1">
+            <h2>Best Seller</h2>
+            <button id="btn">Check All</button>
+        </div>
+        <div class="card1">
+            <div class="row">
+                <img src="../Images/seller-1.jpg" class="image">
+                <div class="para">
+                    <h4>Train Tour Skyline</h4>
+                    <p>Embark on a scenic railway adventure with Trains Tour Skyline</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="../Images/seller-2.jpg" class="image">
+                <div class="para">
+                    <h4>See Nature View</h4>
+                    <p>Where the ocean beauty meets your soul's serenity</p>
+                </div>
+            </div>
+            <div class="row">
+                <img src="../Images/seller-3.jpg" class="image">
+                <div class="para">
+                    <h4>Tokyo Market Ptr</h4>
+                    <p>Where Tradition Meets Modern Marvels in Every Aisle</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- best seller ending -->
+</body>
+
+</html>

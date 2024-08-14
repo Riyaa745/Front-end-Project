@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card1(Tour guide)</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* css of tour guide */
+        .container {
+            margin: 0rem 10rem;
+        }
+
+        .top1 {
+            display: flex;
+            align-items: center;
+            gap: 42rem;
+            margin-left: 1rem;
+            /* line-height: 11rem; */
+            margin-top: 10rem;
+            margin-bottom: 4rem;
+            font-size: 28px;
+        }
+
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+            gap: 13px;
+            font-size: 30px;
+        }
+
+        .icon i {
+            border: 2px solid rgba(0, 0, 0, 0.459);
+            border-radius: 25px;
+            padding: 2px
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+        }
+
+        .image2 {
+            height: 100%;
+            border-radius: 8px 8px 0 0;
+            width: 23rem;
+        }
+
+        .row1 {
+            box-shadow: 0 0 1px;
+            width: 23rem;
+            border-radius: 8px;
+        }
+
+        .head {
+            display: flex;
+            align-items: center;
+            gap: 7.2rem;
+        }
+
+        .para1 {
+            margin: 15px 0;
+            margin-left: 19px;
+        }
+
+        #pg {
+            line-height: 22px;
+            color: grey;
+            margin-top: 0rem;
+            font-size: 17px;
+        }
+
+        .head h4 {
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- guide starting -->
+    <div class="container">
+        <div class="top1">
+            <h2>Tour Guide</h2>
+            <div class="icon">
+                <i class="ri-arrow-left-wide-line"></i>
+                <i class="ri-arrow-right-wide-line"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="row1">
+                <div class="imgs">
+                    <img src="../Images/guide-1.jpg" class="image2">
+                </div>
+                <div class="para1">
+                    <div class="head">
+                        <h3>Elias Hossain</h3>
+                        <h4>Forest Guide</h4>
+                    </div>
+                    <p id="pg">With a deep passion for forests,our experts are committed to craft immersive experiences
+                        to connect with the wilderness</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="imgs">
+                    <img src="../Images/guide-2.jpg" class="image2">
+                </div>
+                <div class="para1">
+                    <div class="head">
+                        <h3>Elias Hossain</h3>
+                        <h4>Forest Guide</h4>
+                    </div>
+                    <p id="pg">With a deep passion for forests,our experts are committed to craft immersive experiences
+                        to
+                        connect with the wilderness</p>
+                </div>
+            </div>
+            <div class="row1">
+                <div class="imgs">
+                    <img src="../Images/guide-3.jpg" class="image2">
+                </div>
+                <div class="para1">
+                    <div class="head">
+                        <h3>Elias Hossain</h3>
+                        <h4>Forest Guide</h4>
+                    </div>
+                    <p id="pg">With a deep passion for forests,our experts are committed to craft immersive experiences
+                        to connect with the wilderness</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- guide page ending -->
+</body>
+
+</html>
