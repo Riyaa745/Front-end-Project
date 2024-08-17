@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trending</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        /* css of trending  */
+        .container {
+            margin: 0rem 10rem;
+        }
+
+        .top1 {
+            display: flex;
+            align-items: center;
+            gap: 42rem;
+            margin-left: 1rem;
+            /* line-height: 11rem; */
+            margin-top: 10rem;
+            margin-bottom: 4rem;
+            font-size: 28px;
+        }
+
+        .icon {
+            display: flex;
+            flex-direction: row;
+            gap: 13px;
+            font-size: 30px;
+        }
+
+        .icon i {
+            border: 2px solid rgba(0, 0, 0, 0.459);
+            border-radius: 25px;
+            padding: 2px
+        }
+
+        .image {
+            width: 21rem;
+            border-radius: 10px;
+        }
+
+        .card {
+            box-shadow: 0px 0px 5px #000000a8;
+            width: 23rem;
+            padding: 16px;
+            border-radius: 8px;
+
+        }
+
+        .head1 {
+            line-height: 7px;
+        }
+
+        h3 {
+            font-size: 21px;
+            line-height: 44px;
+        }
+
+        .head1 p {
+            color: grey;
+            font-size: 16px;
+        }
+
+        .price_rating {
+            display: flex;
+            align-items: center;
+            gap: 8rem;
+            padding-top: 2rem;
+        }
+
+        .price {
+            line-height: 30px;
+        }
+
+        .price p {
+            font-size: 17px;
+        }
+
+        .rating_star {
+            display: flex;
+            color: goldenrod;
+            font-size: 20px;
+            gap: 4px;
+        }
+
+        .rating_comment {
+            display: flex;
+            justify-content: end;
+        }
+
+        .bottom {
+            display: flex;
+            flex-direction: column;
+            margin-top: 2rem;
+        }
+
+        .days {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 20px;
+        }
+
+        .bottom i {
+            color: red;
+        }
+
+        .cancel {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 17px;
+            color: grey;
+            line-height: 43px;
+
+        }
+
+        .grid {
+            grid-template-columns: repeat(3, 1fr);
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- trending start -->
+    <div class="container">
+        <div class="top1">
+            <h2>Trending 2024</h2>
+            <div class="icon">
+                <i class="ri-arrow-left-wide-line"></i>
+                <i class="ri-arrow-right-wide-line"></i>
+            </div>
+        </div>
+        <div class="grid">
+            <div class="card">
+                <img src="../Images/trending-1.jpg" class="image">
+                <div class="head1">
+                    <h3>Mountain Hiking Tour</h3>
+                    <p>Hiking Out|Stoke On Trent</p>
+                </div>
+                <div class="price_rating">
+                    <div class="price">
+                        <p>From</p>
+                        <h2>$957.50</h2>
+                        <p>*price varies</p>
+                    </div>
+                    <div class="rating">
+                        <div class="rating_star">
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span> <i class="ri-star-s-fill"></i></span>
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span><i class="ri-star-half-s-line"></i></span>
+                            <span><i class="ri-star-s-line"></i></span>
+                        </div>
+                        <div class="rating_comment">
+                            <p>4.8(10)</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom">
+                    <div class="days">
+                        <i class="ri-time-line"></i>
+                        <p>7 Days</p>
+                    </div>
+                    <div class="cancel">
+                        <i class="ri-check-line"></i>
+                        <p>Free Cancellation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Images/trending-2.jpg" class="image">
+                <div class="head1">
+                    <h3>Mountain Hiking Tour</h3>
+                    <p>Hiking Out|Stoke On Trent</p>
+                </div>
+                <div class="price_rating">
+                    <div class="price">
+                        <p>From</p>
+                        <h2>$957.50</h2>
+                        <p>*price varies</p>
+                    </div>
+                    <div class="rating">
+                        <div class="rating_star">
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span> <i class="ri-star-s-fill"></i></span>
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span><i class="ri-star-half-s-line"></i></span>
+                            <span><i class="ri-star-s-line"></i></span>
+                        </div>
+                        <div class="rating_comment">
+                            <p>4.8(10)</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom">
+                    <div class="days">
+                        <i class="ri-time-line"></i>
+                        <p>7 Days</p>
+                    </div>
+                    <div class="cancel">
+                        <i class="ri-check-line"></i>
+                        <p>Free Cancellation</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../Images/trending-3.jpg" class="image">
+                <div class="head1">
+                    <h3>Mountain Hiking Tour</h3>
+                    <p>Hiking Out|Stoke On Trent</p>
+                </div>
+                <div class="price_rating">
+                    <div class="price">
+                        <p>From</p>
+                        <h2>$957.50</h2>
+                        <p>*price varies</p>
+                    </div>
+                    <div class="rating">
+                        <div class="rating_star">
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span> <i class="ri-star-s-fill"></i></span>
+                            <span><i class="ri-star-s-fill"></i></span>
+                            <span><i class="ri-star-half-s-line"></i></span>
+                            <span><i class="ri-star-s-line"></i></span>
+                        </div>
+                        <div class="rating_comment">
+                            <p>4.8(10)</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="bottom">
+                    <div class="days">
+                        <i class="ri-time-line"></i>
+                        <p>7 Days</p>
+                    </div>
+                    <div class="cancel">
+                        <i class="ri-check-line"></i>
+                        <p>Free Cancellation</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- trending ending -->
+</body>
+
+</html>
