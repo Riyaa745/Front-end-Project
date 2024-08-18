@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition1</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+        }
+
+        .card {
+            height: 200px;
+            width: 200px;
+            background-color: yellowgreen;
+            /* transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: ease-in-out; */
+            transition: all 3s;
+            /* position: absolute; */
+            /* z-index: 999; */
+        }
+
+        input {
+            background-color: rgb(221, 221, 226);
+            height: 1rem;
+            width: 100%;
+            margin-top: 3rem;
+            transition:all 3s ease-in ;
+        }
+
+        .card:hover {
+            /* background-color: black; */
+            height: 400px;
+            /* width: 400px; */
+        }
+
+        .card:active {
+            background-color: orangered;
+            height: 300px;
+            width: 1000px;
+
+        }
+
+        input:focus {
+            background-color: rgb(238, 0, 255);
+            height: 3rem;
+            width: 200%;
+        }
+
+        .card1 {
+            transform: translate(-32px, 132px);
+            height: 100px;
+            width: 100px;
+            padding: 2rem;
+        }
+
+        .card1 img {
+            height: 100px;
+            width: 200px;
+        }
+
+        /* .container {
+            position: relative;
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card1">
+            <img src="../Images/mountain b.jpg" alt="">
+        </div>
+        <div class="card">
+
+        </div>
+        <input type="text">
+    </div>
+</body>
+
+</html>
