@@ -19,8 +19,9 @@
 
         .top1 {
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            gap: 42rem;
+            /* gap: 42rem; */
             margin-left: 1rem;
             /* line-height: 11rem; */
             margin-top: 10rem;
@@ -29,8 +30,43 @@
         }
 
         .image {
+            position: relative;
             width: 21rem;
             border-radius: 10px;
+        }
+
+        /* hover css */
+
+        #hover_para {
+            color: red;
+            border-radius: 15px;
+            width: 60px;
+            background-color: #e6b6bb;
+            height: 30px;
+            text-align: center;
+            padding-top: 6px;
+        }
+
+        #btn1 {
+            background-color: #d92f2f;
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 3px;
+            width: 6rem;
+            margin-left: 5rem;
+        }
+
+        .hover_bottom{
+         display: flex;
+         align-items: center;
+        }
+
+        .hover_top{
+          position: absolute;
+        }
+        .hover_head{
+          line-height: 2rem;
         }
 
         .card1 {
@@ -56,6 +92,10 @@
             border: none;
             border-radius: 4px;
             padding: 10px 27px;
+            height: 3rem;
+            font-weight: bold;
+            font-size: 15px;
+            margin-right: 4rem;
         }
     </style>
 </head>
@@ -70,6 +110,18 @@
         <div class="card1">
             <div class="row">
                 <img src="../Images/seller-1.jpg" class="image">
+                <div class="hover_top">
+                    <p id="hover_para">20%</p>
+                    <div class="hover_bottom">
+                        <div class="hover_head">
+                            <p>10 Days| 9 Days</p>
+                            <h3>$955.50</h3>
+                        </div>
+                        <div class="hover_btn">
+                            <button id="btn1">Explore</button>
+                        </div>
+                    </div>
+                </div>
                 <div class="para">
                     <h4>Train Tour Skyline</h4>
                     <p>Embark on a scenic railway adventure with Trains Tour Skyline</p>
