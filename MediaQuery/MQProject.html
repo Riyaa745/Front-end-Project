@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>media query basic project1</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css" rel="stylesheet" />
+    <style>
+        /* lappy */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        @media screen and (min-width:768px) {
+            .ri-menu-line {
+                display: none;
+            }
+        }
+
+        .NavBar {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            padding: 0 2rem;
+            overflow: hidden;
+        }
+
+        .navitem_list {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            list-style: none;
+        }
+
+        /* lappy end  */
+
+        /* phone */
+
+        @media screen and (max-width:766px) {
+            .navitem_list {
+                display: none;
+            }
+        }
+
+        /* phone end */
+    </style>
+</head>
+
+<body>
+    <div class="NavBar">
+        <h1>LooGoo</h1>
+
+        <div class="navItem">
+            <i class="ri-menu-line"></i>
+
+            <ul class="navitem_list">
+        
+                <li>Home</li>
+                <li>features</li>
+                <li>Help</li>
+                <li>About Us</li>
+                <li>Sign up</li>
+                <li>login</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // show=document.querySelector("i");
+        // show1=document.querySelector("ul");
+        // let on=0;
+        // show.addEventListener("click", function change(){
+        //     if(on==0){
+        //         show1.style.display="block";
+        //         let on=1;
+        //     }else{
+        //         show1.style.display="none";
+        //         let on=0;
+        //     }
+
+        // })
+
+    </script>
+</body>
+
+</html>

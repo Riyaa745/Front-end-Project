@@ -1,0 +1,102 @@
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /* for laptop */
+        @media (min-width: 768px){
+            .ri-menu-line{
+                display: none;
+            }}
+        .navbar {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 5rem;
+            background-color: black;
+            color: white;
+            height: 3rem;
+        }
+
+        .nav {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+        .box {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .box_para {
+            line-height: 2rem;
+            width: 26rem;
+        }
+
+        .box_para h1 {
+            font-size: 2.5rem;
+        }
+
+        .box_para {
+            font-size: 1.2rem;
+        }
+
+        .btn {
+            background-color: #0b86be;
+            padding: 12px 33px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+
+        .box_img {
+            width: 20rem;
+            height: 21rem;
+        }
+
+        .image {
+            width: 100%;
+            height: 100%;
+        }
+
+        .row {
+            box-shadow: 0 0 2px #6a636363;
+            width: 19rem;
+            height: 21rem;
+            border-radius: 4px;
+        }
+
+        .img {
+            width: 100%;
+            height: 14rem;
+            border-radius: 4px 4px 0 0;
+        }
+
+        .card {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-bottom: 7rem;
+        }
+
+        .para {
+            text-align: center;
+        }
+
+        .btn2 {
+            background-color: #0b86be;
+            padding: 7px 25px;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+       
+    

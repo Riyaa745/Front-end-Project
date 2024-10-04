@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic of mediaquery</title>
+    <style>
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        @media screen and (max-width:375px) {
+            .row1 {
+                flex-direction: column;
+            }
+            .row2{
+                display: block;
+            }
+            img {
+                text-align: center;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row flex row1">
+            <div class="imageDetails">
+                <img src="../Images/client-2.jpg" alt="">
+            </div>
+            <div class="paragraph">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Commodi quae obcaecati, quo saepe repellat
+                    nisi impedit quaerat voluptas, adipisci, omnis iste.</p>
+            </div>
+
+           
+        </div>
+        <div class="flex cards row2">
+            <div class="card row2">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum similique, quae iste sunt ex
+                    corporis amet! Tenetur tempora sint, alias ipsum natus voluptatibus nesciunt doloribus possimus
+                    cupiditate omnis laudantium numquam deleniti ab nihil exercitationem recusandae delectus quidem
+                    repellendus vero, ullam itaque! Aut quo, eius officiis sapiente quibusdam ipsa ducimus dolor
+                    tempore reiciendis officia vel reprehenderit voluptates! Dolor officiis magnam quos.</p>
+            </div>
+            <div class="card row2">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum similique, quae iste sunt ex
+                    corporis amet! Tenetur tempora sint, alias ipsum natus voluptatibus nesciunt doloribus possimus
+                    cupiditate omnis laudantium numquam deleniti ab nihil exercitationem recusandae delectus quidem
+                    repellendus vero, ullam itaque! Aut quo, eius officiis sapiente quibusdam ipsa ducimus dolor
+                    tempore reiciendis officia vel reprehenderit voluptates! Dolor officiis magnam quos.</p>
+            
+            <div class="card row2">
+                <img src="" alt="">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorum similique, quae iste sunt ex
+                    corporis amet! Tenetur tempora sint, alias ipsum natus voluptatibus nesciunt doloribus possimus
+                    cupiditate omnis laudantium numquam deleniti ab nihil exercitationem recusandae delectus quidem
+                    repellendus vero, ullam itaque! Aut quo, eius officiis sapiente quibusdam ipsa ducimus dolor
+                    tempore reiciendis officia vel reprehenderit voluptates! Dolor officiis magnam quos.</p>
+            </div>
+        </div>
+</body>
+
+</html>
