@@ -14,11 +14,6 @@
             box-sizing: border-box;
         }
 
-        @media screen and (min-width:768px) {
-            .ri-menu-line {
-                display: none;
-            }
-        }
 
         .NavBar {
             background-color: blueviolet;
@@ -27,14 +22,17 @@
             align-items: center;
             color: white;
             padding: 0 2rem;
-            overflow: hidden;
+            /* overflow: hidden; */
+            /* height: 5rem; */
+            position: relative;
         }
 
         .navitem_list {
             display: flex;
-            flex-direction: row;
+            /* flex-direction: row; */
             gap: 2rem;
             list-style: none;
+            position: absolute;
         }
 
         /* lappy end  */
@@ -43,6 +41,15 @@
 
         @media screen and (max-width:766px) {
             .navitem_list {
+                display: none;
+                transform: translate(-30px, 9px);
+                background-color: #8a2be2;
+                padding: 10px;
+            }
+        }
+
+        @media screen and (min-width:768px) {
+            .ri-menu-line {
                 display: none;
             }
         }
@@ -57,9 +64,9 @@
 
         <div class="navItem">
             <i class="ri-menu-line"></i>
-
+            <!-- <div class="menuL">=</div> -->
             <ul class="navitem_list">
-        
+
                 <li>Home</li>
                 <li>features</li>
                 <li>Help</li>
@@ -71,20 +78,13 @@
     </div>
 
     <script>
-        // show=document.querySelector("i");
-        // show1=document.querySelector("ul");
-        // let on=0;
-        // show.addEventListener("click", function change(){
-        //     if(on==0){
-        //         show1.style.display="block";
-        //         let on=1;
-        //     }else{
-        //         show1.style.display="none";
-        //         let on=0;
-        //     }
-
-        // })
-
+        let nav = document.querySelector(".navitem_list");
+        let c = document.querySelector(".ri-menu-line");
+        // let c = document.querySelector(".menuL");
+        c.addEventListener("click", function () {
+            console.log("hi");
+            nav.style.display = (nav.style.display === "block") ? "none" : "block";
+        })
     </script>
 </body>
 
