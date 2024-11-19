@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car animation</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+
+        }
+
+        .container {
+            position: relative;
+            /* background-image: url('../Images/bg\ car.jpg');*/
+            background-image: url('../Images/house\ bg.avif');           
+            background-position: center;
+            background-size: contain;
+            width:200%;
+            height: 100%;
+            animation-name: bg;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes bg {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: -1000px;
+            }
+        }
+
+        .car {
+            position: absolute;
+            animation-name: carmove;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        .car img {
+            width: 25rem;
+            margin-top: 30rem;
+        }
+
+        @keyframes carmove {
+            from {
+                top: 0;
+                left: 0;
+            }
+
+            to {
+                top: 0;
+                left: 200rem;
+            }
+        }
+
+
+        .wheel1 {
+            position: absolute;
+            width: 5rem;
+            margin-top: 35rem;
+            margin-left: 2rem;
+            animation-name: wheelmove;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+        }
+
+        .wheel2 {
+            position: absolute;
+            z-index: 1;
+            width: 5rem;
+            height: 5rem;
+            margin-top: 35rem;
+            margin-left: 17.3rem;
+            animation-name: wheelmove;
+            animation-duration: 5s;
+            animation-fill-mode: forwards;
+            animation-timing-function: linear;
+            animation-iteration-count: infinite;
+
+        }
+
+        @keyframes wheelmove {
+            0% {
+                top: 0;
+                left: 0;
+            }
+
+            100% {
+                top: 0;
+                left: 200rem;
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+    <div class="container">
+        <div class="car">
+            <img src="../Images/car.png">
+        </div>
+        <div class="wheel">
+            <img src="../Images/wheel.png" class="wheel1">
+            <img src="../Images/wheel.png" class="wheel2">
+        </div>
+    </div>
+
+    </header>
+</body>
+
+</html>
